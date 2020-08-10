@@ -1,0 +1,20 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "this is a simple app that takes users notes, creates a .txt file and sorts them into their appropriate directory",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semi-hack/Task-2.git"
+  },
+  "author": "nol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semi-hack/Task-2/issues"
+  },
+  "homepage": "https://github.com/semi-hack/Task-2#readme"
+}

@@ -80,21 +80,21 @@ var server = http.createServer((req, res) => {
   }
 
   //get all files in a directory
-  if (reqUrl.pathname == "/all" && req.method === "GET") {
-    requestData(req, (result) => {
-      folder = result.folder
+  // if (reqUrl.pathname == "/all" && req.method === "GET") {
+  //   requestData(req, (result) => {
+  //     folder = result.folder
 
-      const summ = fs.readdirSync(`./${folder}`)
-      // summ.forEach((dir) => {
-      //   const files = fs.readdirSync(`./${dir}`);
-      //   summ[dir] = files
-      // });
-      res.end(JSON.stringify(summ))
+  //     const summ = fs.readdirSync(`./${folder}`)
+  //     // summ.forEach((dir) => {
+  //     //   const files = fs.readdirSync(`./${dir}`);
+  //     //   summ[dir] = files
+  //     // });
+  //     res.end(JSON.stringify(summ))
 
-    })
-  }
+  //   })
+  // }
 
-  // Delete a file, deletes a directory if the last file is deleted
+  // Delete a file, deletes a directory if the last file is deleted deletes the directory also
   if (reqUrl.pathname == "/delete" && req.method === "DELETE") {
     requestData(req, (result) => {
       name = result.name;
@@ -130,4 +130,4 @@ function requestData(request, callback) {
   }
 }
 
-server.listen(4000, "127.0.0.1");
+server.listen(4000);
