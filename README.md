@@ -4,6 +4,7 @@ this is a simple app that takes users notes, creates a .txt file and sorts them 
 ### Requirements
 1. Node installed
 2. Postman
+3. Clone Repository
 
 ### Usage
 `` Post Request:  http://localhost:4000/write``
